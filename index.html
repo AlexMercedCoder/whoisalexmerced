@@ -26,6 +26,12 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" as="image" href="assets/img/alex-8bit-fights-ignorance.jpg">
+    <link rel="preload" as="font"
+        href="https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1C4G-EiAou6Y.woff2" crossorigin>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,217 +49,296 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Alex Merced",
+      "birthDate": "1985-06-30",
+      "birthPlace": "Hartford, Connecticut",
       "jobTitle": "Head of Developer Relations",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Dremio"
+      },
       "url": "https://whoisalexmerced.com",
       "sameAs": [
         "https://alexmerced.com",
         "https://twitter.com/alexmercedcoder",
-        "https://www.linkedin.com/in/alexmerced/"
+        "https://www.linkedin.com/in/alexmerced/",
+        "https://alexmerced.blog",
+        "https://alexmercedcoder.dev",
+        "https://datalakehousehub.com"
       ],
-      "knowsAbout": ["Data Engineering", "Apache Iceberg", "Software Development", "Economics"]
+      "knowsAbout": ["Data Engineering", "Apache Iceberg", "Software Development", "Economics", "Developer Advocacy"]
     }
     </script>
 </head>
 
 <body>
 
+    <!-- Skip to content -->
+    <a href="#hero" class="skip-link">Skip to content</a>
+
+    <!-- Sticky Navigation -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-brand">Alex Merced</a>
+            <button class="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            <ul class="nav-links">
+                <li><a href="#early-life">Early Life</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#college">College</a></li>
+                <li><a href="#economics">NYC</a></li>
+                <li><a href="#public-service">Public Service</a></li>
+                <li><a href="#tech-transition">Tech</a></li>
+                <li><a href="#devrel">DevRel</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#podcasts">Podcasts</a></li>
+                <li><a href="#projects">Links</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <header id="hero">
         <div class="container">
-            <div class="profile-img-container">
+            <div class="profile-img-container reveal">
                 <img src="assets/img/alex-8bit-fights-ignorance.jpg" alt="Alex Merced Pixel Art" class="profile-img">
             </div>
-            <h1>Alex Merced</h1>
-            <h2>Technologist | Educator | Developer Advocate | Author</h2>
-            <p class="mission">Promoting empowerment through education, technology, and optimism.</p>
-            <a href="https://alexmerced.com" class="btn-primary">Explore Alex’s Work</a>
+            <h1 class="reveal">Alex Merced</h1>
+            <h2 class="reveal">Technologist | Educator | Developer Advocate | Author</h2>
+            <p class="mission reveal">Promoting empowerment through education, technology, and optimism.</p>
+            <a href="https://alexmerced.com" class="btn-primary reveal">Explore Alex's Work</a>
         </div>
     </header>
 
-    <!-- Early Life -->
-    <section id="early-life">
-        <div class="container">
-            <h3>Early Life & Context</h3>
-            <div class="content-split">
-                <div class="text">
-                    <p>Born June 30, 1985, in Hartford, Connecticut to a Guatemalan mother and Puerto Rican father.
-                        These diverse roots and formative experiences shaped Alex into the friendly neighborhood tech
-                        geek he is today.</p>
-                    <br>
-                    <p>For high school Alex attended Howell Cheney Technical High School in Manchester, CT where he
-                        studied Microcomputer and was part of the Guitar Club,Mathletes team and STAR Robotics Club.</p>
-                    <br>
-                    <p>Alex started developing a sense for logical thinking writing scripts for the online RPG GRAAL and
-                        building small Role Playing Games with RPG Maker 2000. During this time he also starts learning
-                        web design with HTML and CSS designing fun fan sites for things like Dragon Ball Z on Geocities.
-                    </p>
-                </div>
-                <div class="media">
-                    <img src="assets/img/alex-dremio-cartoon.jpg" alt="Alex Merced Cartoon"
-                        style="max-width:300px; border-radius:12px; box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Timeline wrapper for life story sections -->
+    <div class="timeline">
 
-    <!-- Music Section -->
-    <section id="music">
-        <div class="container">
-            <h3>Musician & Creator</h3>
-            <div class="content-split">
-                <div class="text">
-                    <p>Alex's creative journey began with music. He played trombone in middle school before picking up
-                        the guitar in high school. This passion evolved into songwriting during his college years and
-                        early 20s.</p>
-                    <p>Driven by curiosity, he taught himself music theory and production, producing several albums of
-                        electronic music. A mix of his guitar and electronic music in their original form can be heard
-                        below.</p>
-                    <p>Recently, Alex has begun revitalizing many of his old songs using AI to see what full productions
-                        of those songs would sound like.</p>
-                </div>
-                <div class="media" style="display: flex; flex-direction: column; gap: 15px;">
-                    <div>
-                        <p style="font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;"><a
-                                href="https://www.youtube.com/playlist?list=PL0DCC201C0F84EB13" target="_blank"
-                                style="color: inherit; text-decoration: none; border-bottom: 1px dashed var(--accent-orange);">Original
-                                Guitar & Electronic</a>
+        <!-- Early Life -->
+        <section id="early-life" class="timeline-item">
+            <div class="container reveal">
+                <h3>Early Life & Context</h3>
+                <div class="content-split">
+                    <div class="text">
+                        <p>Born June 30, 1985, in Hartford, Connecticut to a Guatemalan mother and Puerto Rican father.
+                            These diverse roots and formative experiences shaped Alex into the friendly neighborhood
+                            tech
+                            geek he is today.</p>
+                        <br>
+                        <p>For high school Alex attended Howell Cheney Technical High School in Manchester, CT where he
+                            studied Microcomputer and was part of the Guitar Club, Mathletes team and STAR Robotics
+                            Club.</p>
+                        <br>
+                        <p>Alex started developing a sense for logical thinking writing scripts for the online RPG GRAAL
+                            and
+                            building small Role Playing Games with RPG Maker 2000. During this time he also starts
+                            learning
+                            web design with HTML and CSS designing fun fan sites for things like Dragon Ball Z on
+                            Geocities.
                         </p>
-                        <iframe width="100%" height="200"
-                            src="https://www.youtube.com/embed/videoseries?list=PL0DCC201C0F84EB13"
-                            title="Alex Merced Original Music" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen style="border-radius: 8px;"></iframe>
                     </div>
-                    <div>
-                        <p style="font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;"><a
-                                href="https://www.youtube.com/playlist?list=PL_Jk7a1xK5B9_BbyWoAvFc" target="_blank"
-                                style="color: inherit; text-decoration: none; border-bottom: 1px dashed var(--accent-orange);">AI
-                                Revitalized Productions</a>
-                        </p>
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/n_BbyWoAvFc"
-                            title="AI Revitalized Songs" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen style="border-radius: 8px;"></iframe>
+                    <div class="media">
+                        <img src="assets/img/alex-dremio-cartoon.jpg" alt="Alex Merced Cartoon"
+                            style="max-width:300px; border-radius:12px; box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- College Years -->
-    <section id="college">
-        <div class="container">
-            <h3>College Years (2003–2007)</h3>
-            <p class="subtitle">Bowling Green State University</p>
-            <div class="split-layout">
-                <div class="bio">
-                    <div class="card-grid" style="margin-top:0;">
-                        <div class="card">
-                            <h4>Media & Culture</h4>
-                            <p>Studied Marketing and Popular Culture Studies, exploring the intersection of media and
-                                society.</p>
+        <!-- Music Section -->
+        <section id="music" class="timeline-item">
+            <div class="container reveal">
+                <h3>Musician & Creator</h3>
+                <div class="content-split">
+                    <div class="text">
+                        <p>Alex's creative journey began with music. He played trombone in middle school before picking
+                            up
+                            the guitar in high school. This passion evolved into songwriting during his college years
+                            and
+                            early 20s.</p>
+                        <p>Driven by curiosity, he taught himself music theory and production, producing several albums
+                            of
+                            electronic music. A mix of his guitar and electronic music in their original form can be
+                            heard
+                            below.</p>
+                        <p>Recently, Alex has begun revitalizing many of his old songs using AI to see what full
+                            productions
+                            of those songs would sound like.</p>
+                    </div>
+                    <div class="media" style="display: flex; flex-direction: column; gap: 15px;">
+                        <div>
+                            <p style="font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;"><a
+                                    href="https://www.youtube.com/playlist?list=PL0DCC201C0F84EB13" target="_blank"
+                                    style="color: inherit; text-decoration: none; border-bottom: 1px dashed var(--accent-orange);">Original
+                                    Guitar & Electronic</a>
+                            </p>
+                            <iframe width="100%" height="200"
+                                src="https://www.youtube.com/embed/videoseries?list=PL0DCC201C0F84EB13"
+                                title="Alex Merced Original Music" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen loading="lazy" style="border-radius: 8px;"></iframe>
                         </div>
-                        <div class="card">
-                            <h4>Radio</h4>
-                            <p>Served as Promotion Director at WBGU-FM, managing events and community outreach.</p>
+                        <div>
+                            <p style="font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;"><a
+                                    href="https://www.youtube.com/playlist?list=PL_Jk7a1xK5B9_BbyWoAvFc" target="_blank"
+                                    style="color: inherit; text-decoration: none; border-bottom: 1px dashed var(--accent-orange);">AI
+                                    Revitalized Productions</a>
+                            </p>
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/n_BbyWoAvFc"
+                                title="AI Revitalized Songs" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen loading="lazy" style="border-radius: 8px;"></iframe>
                         </div>
-                        <div class="card">
-                            <h4>Entrepreneurship</h4>
-                            <p>Founded <em>Fashionably Numb Music</em> and <em>The Gamers Lounge</em> hobby store.</p>
-                            <div class="card-links" style="margin-top: 10px;">
-                                <a href="https://bgfalconmedia.com/129458/news/bg-news/junior-numbs-bg/" target="_blank"
-                                    style="font-size: 0.9rem; color: var(--accent-orange);">Read FNM Article
-                                    &rarr;</a><br>
-                                <a href="https://bgfalconmedia.com/106226/news/bg-news/students-open-up-shop/"
-                                    target="_blank" style="font-size: 0.9rem; color: var(--accent-orange);">Read Gamers
-                                    Lounge Article &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- College Years -->
+        <section id="college" class="timeline-item">
+            <div class="container reveal">
+                <h3>College Years (2003–2007)</h3>
+                <p class="subtitle">Bowling Green State University</p>
+                <div class="split-layout">
+                    <div class="bio">
+                        <div class="card-grid" style="margin-top:0;">
+                            <div class="card">
+                                <h4>Media & Culture</h4>
+                                <p>Studied Marketing and Popular Culture Studies, exploring the intersection of media
+                                    and
+                                    society.</p>
+                            </div>
+                            <div class="card">
+                                <h4>Radio</h4>
+                                <p>Served as Promotion Director at WBGU-FM, managing events and community outreach.</p>
+                            </div>
+                            <div class="card">
+                                <h4>Entrepreneurship</h4>
+                                <p>Founded <em>Fashionably Numb Music</em> and <em>The Gamers Lounge</em> hobby store.
+                                </p>
+                                <div class="card-links" style="margin-top: 10px;">
+                                    <a href="https://bgfalconmedia.com/129458/news/bg-news/junior-numbs-bg/"
+                                        target="_blank" style="font-size: 0.9rem; color: var(--accent-orange);">Read FNM
+                                        Article
+                                        &rarr;</a><br>
+                                    <a href="https://bgfalconmedia.com/106226/news/bg-news/students-open-up-shop/"
+                                        target="_blank" style="font-size: 0.9rem; color: var(--accent-orange);">Read
+                                        Gamers
+                                        Lounge Article &rarr;</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="media" style="flex:1;">
-                    <img src="assets/img/alex-gamers-lounge.png" alt="The Gamers Lounge"
-                        style="width:100%; border-radius:12px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); opacity:0.9;">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NYC & Economics -->
-    <section id="economics">
-        <div class="container">
-            <h3>NYC & Financial Education (2008–2019)</h3>
-            <div class="content-split">
-                <div class="text">
-                    <p>After graduation, Alex moved to New York City and became a trainer at Greico Financial Training.
-                        For over a decade, he taught economics and finance to professionals, honing his ability to break
-                        down complex topics.</p>
-                    <img src="assets/img/Alex-at-nyse.jpg" alt="Alex at NYSE"
-                        style="width:100%; margin-top:20px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
-                </div>
-                <div class="media">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/83l--dyBd3g"
-                        title="Alex Merced Statistics Class" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <div class="media" style="flex:1;">
+                        <img src="assets/img/alex-gamers-lounge.png" alt="The Gamers Lounge"
+                            style="width:100%; border-radius:12px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); opacity:0.9;">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Public Service -->
-    <section id="public-service">
-        <div class="container">
-            <h3>Public Service & Engagement</h3>
-            <div class="content-split">
-                <div class="media">
-                    <img src="assets/img/Alex-LNC-Convention-1.jpg" alt="Alex Merced at LNC Convention"
-                        style="max-height: 300px; border-radius: 50%; box-shadow: 0 10px 30px rgba(0,0,0,0.4); margin: 0 auto; display:block;">
-                </div>
-                <div class="text">
-                    <p>Driven by ideas of pluralism and tolerance, Alex ran for public office three times to promote
-                        free
-                        exchange and radical tolerance. He served as Vice Chair of the LNC from 2018 to 2020.</p>
+        <!-- Quote Callout 1 -->
+        <section class="timeline-item" style="padding: 40px 0; border-bottom: none;">
+            <div class="container">
+                <blockquote class="pull-quote reveal">
+                    <p>The best way to learn is to teach. When you explain something to someone else, you truly
+                        understand it yourself.</p>
+                    <cite>— Alex Merced</cite>
+                </blockquote>
+            </div>
+        </section>
 
-                    <ul style="margin-top: 1.5rem; list-style: none; padding-left: 0;">
-                        <li style="margin-bottom: 0.8rem;"><a href="https://www.youtube.com/watch?v=NgbgjXhnDRo"
-                                target="_blank" style="border-bottom: 1px solid var(--accent-orange);">📺 2013 NYC
-                                Public Advocate Interview</a></li>
-                        <li style="margin-bottom: 0.8rem;"><a
-                                href="https://spectrumlocalnews.com/mo/st-louis/capital-tonight-interviews/2016/08/29/alex-merced-082916"
-                                target="_blank" style="border-bottom: 1px solid var(--accent-orange);">📰 2016 US Senate
-                                Interview</a></li>
-                        <li style="margin-bottom: 0.8rem;"><a href="https://www.youtube.com/watch?v=Y21p1xAsq2c"
-                                target="_blank" style="border-bottom: 1px solid var(--accent-orange);">📺 2017 NYC
-                                Comptroller Statement</a></li>
-                        <li style="margin-bottom: 0.8rem;"><a href="https://www.youtube.com/watch?v=Slth5O9yHiQ"
-                                target="_blank" style="border-bottom: 1px solid var(--accent-orange);">🎤 2019 MN Party
-                                Convention Speech</a></li>
-                    </ul>
+        <!-- NYC & Economics -->
+        <section id="economics" class="timeline-item">
+            <div class="container reveal">
+                <h3>NYC & Financial Education (2008–2019)</h3>
+                <div class="content-split">
+                    <div class="text">
+                        <p>After graduation, Alex moved to New York City and became a trainer at Greico Financial
+                            Training.
+                            For over a decade, he taught economics and finance to professionals, honing his ability to
+                            break
+                            down complex topics.</p>
+                        <img src="assets/img/Alex-at-nyse.jpg" alt="Alex at NYSE"
+                            style="width:100%; margin-top:20px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
+                    </div>
+                    <div class="media">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/83l--dyBd3g"
+                            title="Alex Merced Statistics Class" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Tech Transition -->
-    <section id="tech-transition">
+        <!-- Public Service -->
+        <section id="public-service" class="timeline-item">
+            <div class="container reveal">
+                <h3>Public Service & Engagement</h3>
+                <div class="content-split">
+                    <div class="media">
+                        <img src="assets/img/alex-lnc-square.png" alt="Alex Merced Speaking at Convention"
+                            style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.4); margin: 0 auto; display:block;">
+                    </div>
+                    <div class="text">
+                        <p>Driven by ideas of pluralism and tolerance, Alex ran for public office three times to promote
+                            free
+                            exchange and radical tolerance. He served as Vice Chair of the LNC from 2018 to 2020.</p>
+
+                        <ul style="margin-top: 1.5rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.8rem;"><a href="https://www.youtube.com/watch?v=NgbgjXhnDRo"
+                                    target="_blank" aria-label="Watch 2013 NYC Public Advocate Interview on YouTube"
+                                    style="border-bottom: 1px solid var(--accent-orange);">📺 2013 NYC
+                                    Public Advocate Interview</a></li>
+                            <li style="margin-bottom: 0.8rem;"><a
+                                    href="https://spectrumlocalnews.com/mo/st-louis/capital-tonight-interviews/2016/08/29/alex-merced-082916"
+                                    target="_blank" aria-label="Read 2016 US Senate Interview article"
+                                    style="border-bottom: 1px solid var(--accent-orange);">📰 2016 US Senate
+                                    Interview</a></li>
+                            <li style="margin-bottom: 0.8rem;"><a href="https://www.youtube.com/watch?v=Y21p1xAsq2c"
+                                    target="_blank" aria-label="Watch 2017 NYC Comptroller Statement on YouTube"
+                                    style="border-bottom: 1px solid var(--accent-orange);">📺 2017 NYC
+                                    Comptroller Statement</a></li>
+                            <li style="margin-bottom: 0.8rem;"><a href="https://www.youtube.com/watch?v=Slth5O9yHiQ"
+                                    target="_blank" aria-label="Watch 2019 Minnesota Party Convention Speech on YouTube"
+                                    style="border-bottom: 1px solid var(--accent-orange);">🎤 2019 MN Party
+                                    Convention Speech</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Transition -->
+        <section id="tech-transition" class="timeline-item">
+            <div class="container reveal">
+                <h3>Transition to Technology (2019)</h3>
+                <p>In 2019, Alex reinvented his career, diving into software development. He created
+                    <em>GrokOverflow.com</em> and produced a comprehensive <a
+                        href="https://www.youtube.com/watch?v=cPKcxB_gP94&list=PLY6oTPmKnKbbtYKTMtAe8uEml92ZYakv_"
+                        target="_blank" style="color: var(--accent-orange);">web development masterclass video
+                        series</a> on YouTube,
+                    continuing his passion for teaching. During this time he worked for full-stack development agency,
+                    Crossfield Digital, as a bootcamp instructor for General Assembly and occasional freelance work with
+                    clients like CampusGuard.
+                </p>
+            </div>
+        </section>
+
+    </div><!-- end .timeline -->
+
+    <!-- Quote Callout 2 -->
+    <section style="padding: 40px 0; border-bottom: none;">
         <div class="container">
-            <h3>Transition to Technology (2019)</h3>
-            <p>In 2019, Alex reinvented his career, diving into software development. He created
-                <em>GrokOverflow.com</em> and produced a comprehensive <a
-                    href="https://www.youtube.com/watch?v=cPKcxB_gP94&list=PLY6oTPmKnKbbtYKTMtAe8uEml92ZYakv_"
-                    target="_blank" style="color: var(--accent-orange);"></a>web development masterclass video
-                series</a> on YouTube,
-                continuing his passion for teaching. During this time he worked for Full-stack development agency,
-                Crossfield Digital, as a bootcamp instructor for General Assembly and occasional freelance work with
-                clients like CampusGuard
-            </p>
+            <blockquote class="pull-quote reveal">
+                <p>Technology is at its best when it empowers people to do more — to learn, build, and share freely.</p>
+                <cite>— Alex Merced</cite>
+            </blockquote>
         </div>
     </section>
 
     <!-- DevRel -->
     <section id="devrel">
-        <div class="container">
+        <div class="container reveal">
             <h3>Developer Advocacy (2021–Present)</h3>
             <div class="split-layout">
                 <div class="bio">
@@ -280,22 +365,23 @@
 
     <!-- Books -->
     <section id="books">
-        <div class="container">
+        <div class="container reveal">
             <h3>Books & Authorship</h3>
             <div class="book-grid">
                 <a href="https://hello.dremio.com/wp-apache-iceberg-the-definitive-guide-reg.html" target="_blank"
-                    class="book">
+                    class="book" aria-label="Download Apache Iceberg: The Definitive Guide">
                     <img src="assets/img/cover-apache-iceberg-tdg.jpg" alt="Apache Iceberg: The Definitive Guide"
                         loading="lazy">
                     <p>Apache Iceberg: The Definitive Guide</p>
                 </a>
-                <a href="https://hello.dremio.com/wp-apache-polaris-guide-reg.html" target="_blank" class="book">
+                <a href="https://hello.dremio.com/wp-apache-polaris-guide-reg.html" target="_blank" class="book"
+                    aria-label="Download Apache Polaris: The Definitive Guide">
                     <img src="assets/img/cover-apache-polaris-tdg.jpg" alt="Apache Polaris: The Definitive Guide"
                         loading="lazy">
                     <p>Apache Polaris: The Definitive Guide</p>
                 </a>
                 <a href="https://www.manning.com/books/architecting-an-apache-iceberg-lakehouse" target="_blank"
-                    class="book">
+                    class="book" aria-label="View Architecting an Apache Iceberg Lakehouse on Manning">
                     <img src="assets/img/cover-architecting-an-apache-iceberg-lakehouse.jpg"
                         alt="Architecting an Apache Iceberg Lakehouse" loading="lazy">
                     <p>Architecting an Apache Iceberg Lakehouse</p>
@@ -306,21 +392,22 @@
 
     <!-- Podcasts -->
     <section id="podcasts">
-        <div class="container">
+        <div class="container reveal">
             <h3>Podcasts</h3>
             <div class="podcast-grid"
                 style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
                 <div class="podcast-item">
-                    <a href="https://open.spotify.com/show/2PRDrWVpgDvKxN6n1oUsJF" target="_blank">
+                    <a href="https://open.spotify.com/show/2PRDrWVpgDvKxN6n1oUsJF" target="_blank"
+                        aria-label="Listen to Alex Merced's Tech Podcast on Spotify">
                         <img src="assets/img/podcast-alex-merceds-tech-podcast.jpeg" alt="Alex Merced's Tech Podcast"
                             class="podcast-art">
-                        <p><strong>Alex Merced’s Tech Podcast</strong></p>
+                        <p><strong>Alex Merced's Tech Podcast</strong></p>
                         <p style="font-size: 0.9rem;">Listen on Spotify</p>
                     </a>
                 </div>
                 <div class="podcast-item">
-                    <a href="https://open.spotify.com/show/5cYbdb4q40zo0u4iHjZd9x" target="_blank">
-                        <!-- Using same art placeholder for now, ideally would vary -->
+                    <a href="https://open.spotify.com/show/5cYbdb4q40zo0u4iHjZd9x" target="_blank"
+                        aria-label="Listen to Thoughts and Opinions of Alex Merced on Spotify">
                         <img src="assets/img/podcast-alex-merced-opinions.jpeg" alt="Thoughts & Opinions"
                             class="podcast-art" style="filter: hue-rotate(45deg);">
                         <p><strong>Thoughts & Opinions of Alex Merced</strong></p>
@@ -328,7 +415,8 @@
                     </a>
                 </div>
                 <div class="podcast-item">
-                    <a href="https://open.spotify.com/show/0KDSNFMuAzNEqbR7ZfuprB" target="_blank">
+                    <a href="https://open.spotify.com/show/0KDSNFMuAzNEqbR7ZfuprB" target="_blank"
+                        aria-label="Listen to DevRel and Dev Advocacy Podcast on Spotify">
                         <img src="assets/img/podcast-dev-rel-podcast.webp" alt="DevRel & Dev Advocacy"
                             class="podcast-art" style="filter: hue-rotate(90deg);">
                         <p><strong>DevRel and Dev Advocacy</strong></p>
@@ -341,15 +429,33 @@
 
     <!-- Projects -->
     <section id="projects">
-        <div class="container">
+        <div class="container reveal">
             <h3>Explore More</h3>
             <ul class="link-list">
-                <li><a href="https://DataLakehouseHub.com">DataLakehouseHub.com</a></li>
-                <li><a href="https://AlexMerced.com">AlexMerced.com</a></li>
-                <li><a href="https://AlexMerced.blog">AlexMerced.blog</a></li>
-                <li><a href="https://AlexMercedCoder.dev">AlexMercedCoder.dev</a></li>
-                <li><a href="https://AlexMercedMedia.com">AlexMercedMedia.com</a></li>
+                <li><a href="https://DataLakehouseHub.com"
+                        aria-label="Visit DataLakehouseHub.com">DataLakehouseHub.com</a></li>
+                <li><a href="https://AlexMerced.com" aria-label="Visit AlexMerced.com">AlexMerced.com</a></li>
+                <li><a href="https://AlexMerced.blog" aria-label="Visit AlexMerced.blog">AlexMerced.blog</a></li>
+                <li><a href="https://AlexMercedCoder.dev" aria-label="Visit AlexMercedCoder.dev">AlexMercedCoder.dev</a>
+                </li>
+                <li><a href="https://AlexMercedMedia.com" aria-label="Visit AlexMercedMedia.com">AlexMercedMedia.com</a>
+                </li>
             </ul>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter">
+        <div class="container reveal">
+            <h3>Stay Connected</h3>
+            <div class="newsletter-card">
+                <p>Get updates on new content, speaking events, and open source projects.</p>
+                <form class="newsletter-form" action="mailto:alex@alexmerced.com" method="post" enctype="text/plain">
+                    <input type="email" name="email" placeholder="your@email.com" required
+                        aria-label="Email address for newsletter signup">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -360,6 +466,12 @@
             <a href="https://alexmerced.com" class="btn-secondary">Visit AlexMerced.com</a>
         </div>
     </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" aria-label="Scroll back to top">↑</button>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
 
 </body>
 
