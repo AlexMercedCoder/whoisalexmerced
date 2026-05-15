@@ -1,0 +1,29 @@
+# Who is Alex Merced?
+
+This site is the personal profile of Alex Merced: Technologist, Educator, Developer Advocate, and Author. It covers his life journey from his early life to his current role as Head of Developer Relations at Dremio.
+
+## Sections
+- **Early Life & Context:** Born June 30, 1985, in Hartford, CT. Early interest in tech and web design.
+- **Musician & Creator:** Produced original guitar and electronic music, and now uses AI to revitalize past productions.
+- **College Years:** Attended Bowling Green State University (2003-2007), founded businesses, and studied media/culture.
+- **NYC & Economics:** Spent a decade in NYC teaching economics and finance to professionals.
+- **Public Service:** Ran for public office advocating for pluralism and served as Vice Chair of the LNC (2018-2020).
+- **Transition to Technology:** Reinvented his career in 2019, diving into software development, creating GrokOverflow.com, and producing tech content.
+- **Developer Advocacy:** Joined Dremio in 2021 as Head of Developer Relations, focusing on Apache Iceberg, Apache Polaris, and developer education.
+
+## Books Authored
+- Apache Iceberg: The Definitive Guide
+- Apache Polaris: The Definitive Guide
+- Architecting an Apache Iceberg Lakehouse
+
+## Podcasts
+- Alex Merced's Tech Podcast
+- Thoughts & Opinions of Alex Merced
+- DevRel and Dev Advocacy
+
+## Links
+- [DataLakehouseHub.com](https://DataLakehouseHub.com)
+- [AlexMerced.com](https://AlexMerced.com)
+- [AlexMerced.blog](https://AlexMerced.blog)
+- [AlexMercedCoder.dev](https://AlexMercedCoder.dev)
+- [AlexMercedMedia.com](https://AlexMercedMedia.com)

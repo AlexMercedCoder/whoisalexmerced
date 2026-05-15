@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://whoisalexmerced.com/sitemap.xml
