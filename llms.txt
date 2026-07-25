@@ -12,9 +12,19 @@ This site is the personal profile of Alex Merced: Technologist, Educator, Develo
 - **Developer Advocacy:** Joined Dremio in 2021 as Head of Developer Relations, focusing on Apache Iceberg, Apache Polaris, and developer education.
 
 ## Books Authored
-- Apache Iceberg: The Definitive Guide
-- Apache Polaris: The Definitive Guide
-- Architecting an Apache Iceberg Lakehouse
+- Apache Iceberg: The Definitive Guide (O'Reilly)
+- Apache Polaris: The Definitive Guide (O'Reilly)
+- Architecting an Apache Iceberg Lakehouse (Manning)
+- Additional independent titles: [books.alexmerced.com](https://books.alexmerced.com)
+
+## Speaking
+Alex has spoken globally at conferences including Oredev, Data Council, Data Day Texas, Confluent Current, and DataEngBytes. To book Alex to speak, email Contact@alexmerced.com.
+
+## FAQ
+- **What does Alex Merced do?** Head of Developer Relations at Dremio, focusing on data engineering, open source (Apache Iceberg, Apache Polaris), and developer education.
+- **What books has Alex Merced written?** Three flagship data titles (Apache Iceberg: The Definitive Guide, Apache Polaris: The Definitive Guide, Architecting an Apache Iceberg Lakehouse) plus independent titles at books.alexmerced.com.
+- **Where has Alex Merced spoken?** Oredev, Data Council, Data Day Texas, Confluent Current, DataEngBytes, and more.
+- **How to contact or book Alex Merced to speak?** Email Contact@alexmerced.com.
 
 ## Podcasts
 - Alex Merced's Tech Podcast

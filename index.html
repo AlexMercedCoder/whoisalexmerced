@@ -57,6 +57,18 @@
         "@type": "Organization",
         "name": "Dremio"
       },
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Head of Developer Relations",
+        "occupationLocation": {
+          "@type": "Organization",
+          "name": "Dremio"
+        }
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Bowling Green State University"
+      },
       "url": "https://whoisalexmerced.com",
       "sameAs": [
         "https://alexmerced.com",
@@ -64,10 +76,54 @@
         "https://www.linkedin.com/in/alexmerced/",
         "https://alexmerced.blog",
         "https://alexmercedcoder.dev",
-        "https://datalakehousehub.com"
+        "https://datalakehousehub.com",
+        "https://books.alexmerced.com",
+        "https://alexmercedmedia.com"
       ],
       "knowsAbout": ["Data Engineering", "Apache Iceberg", "Software Development", "Economics", "Developer Advocacy"],
       "image": "https://whoisalexmerced.com/assets/img/alex-8bit-fights-ignorance.jpg"
+    }
+    </script>
+
+    <!-- FAQPage JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does Alex Merced do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alex Merced is the Head of Developer Relations at Dremio, where he focuses on data engineering, open source technologies like Apache Iceberg and Apache Polaris, and developer education."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What books has Alex Merced written?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alex Merced is the author of three flagship data titles: 'Apache Iceberg: The Definitive Guide' (O'Reilly), 'Apache Polaris: The Definitive Guide' (O'Reilly), and 'Architecting an Apache Iceberg Lakehouse' (Manning), along with additional independent titles available at books.alexmerced.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where has Alex Merced spoken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alex Merced has spoken globally at conferences including Oredev, Data Council, Data Day Texas, Confluent Current, and DataEngBytes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I contact or book Alex Merced to speak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can contact Alex Merced for speaking engagements and other inquiries by emailing Contact@alexmerced.com."
+          }
+        }
+      ]
     }
     </script>
 </head>
@@ -389,6 +445,11 @@
                     <p>Architecting an Apache Iceberg Lakehouse</p>
                 </a>
             </div>
+            <p style="margin-top: 2rem; text-align: center;">
+                <a href="https://books.alexmerced.com" target="_blank" rel="noopener" class="btn-secondary"
+                    aria-label="Browse the full book catalog at books.alexmerced.com">Browse the full book catalog
+                    &rarr;</a>
+            </p>
         </div>
     </section>
 
@@ -457,6 +518,53 @@
                         aria-label="Email address for newsletter signup">
                     <button type="submit">Subscribe</button>
                 </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speaking CTA -->
+    <section id="speaking">
+        <div class="container reveal">
+            <h3>Speaking & Contact</h3>
+            <div class="newsletter-card">
+                <p>Alex speaks at conferences and events around the world on Apache Iceberg, Apache Polaris, data
+                    lakehouses, and developer relations. Interested in booking Alex to speak at your event?</p>
+                <a href="mailto:Contact@alexmerced.com" class="btn-primary"
+                    aria-label="Email Alex Merced to book a speaking engagement">Book Alex to Speak —
+                    Contact@alexmerced.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container reveal">
+            <h3>Frequently Asked Questions</h3>
+            <div class="card-grid" style="margin-top: 1.5rem;">
+                <div class="card">
+                    <h4>What does Alex Merced do?</h4>
+                    <p>Alex Merced is the Head of Developer Relations at Dremio, where he focuses on data engineering,
+                        open source (Apache Iceberg, Apache Polaris), and developer education.</p>
+                </div>
+                <div class="card">
+                    <h4>What books has Alex Merced written?</h4>
+                    <p>Alex has authored three flagship data titles — <em>Apache Iceberg: The Definitive Guide</em>,
+                        <em>Apache Polaris: The Definitive Guide</em>, and <em>Architecting an Apache Iceberg
+                            Lakehouse</em> — plus additional independent titles available at <a
+                            href="https://books.alexmerced.com" target="_blank" rel="noopener"
+                            style="color: var(--accent-orange);">books.alexmerced.com</a>.</p>
+                </div>
+                <div class="card">
+                    <h4>Where has Alex Merced spoken?</h4>
+                    <p>Alex has spoken globally at conferences including Oredev, Data Council, Data Day Texas, Confluent
+                        Current, and DataEngBytes.</p>
+                </div>
+                <div class="card">
+                    <h4>How can I contact or book Alex Merced to speak?</h4>
+                    <p>Email <a href="mailto:Contact@alexmerced.com"
+                            style="color: var(--accent-orange);">Contact@alexmerced.com</a> for speaking engagements and
+                        other inquiries.</p>
+                </div>
             </div>
         </div>
     </section>
