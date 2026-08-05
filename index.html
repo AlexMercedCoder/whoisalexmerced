@@ -86,6 +86,36 @@
     }
     </script>
 
+    <!-- VideoObject JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Who is Alex Merced?",
+      "description": "Who is Alex Merced — a short introduction",
+      "thumbnailUrl": "https://whoisalexmerced.com/assets/who-is-alex-merced-poster.jpg",
+      "uploadDate": "2026-08-05",
+      "duration": "PT48S",
+      "contentUrl": "https://whoisalexmerced.com/assets/who-is-alex-merced.mp4",
+      "embedUrl": "https://whoisalexmerced.com/#brand-video",
+      "about": {
+        "@type": "Person",
+        "name": "Alex Merced",
+        "url": "https://whoisalexmerced.com"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Alex Merced",
+        "url": "https://whoisalexmerced.com"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Alex Merced",
+        "url": "https://whoisalexmerced.com"
+      }
+    }
+    </script>
+
     <!-- FAQPage JSON-LD Schema -->
     <script type="application/ld+json">
     {
@@ -167,6 +197,28 @@
             <a href="https://alexmerced.com" class="btn-primary reveal">Explore Alex's Work</a>
         </div>
     </header>
+
+    <!-- Brand Video -->
+    <section id="brand-video">
+        <div class="container reveal">
+            <h3>Who is Alex Merced?</h3>
+            <figure class="video-figure">
+                <div class="video-frame">
+                    <video
+                        controls
+                        preload="metadata"
+                        playsinline
+                        poster="assets/who-is-alex-merced-poster.jpg"
+                        width="1920" height="1080">
+                        <source src="assets/who-is-alex-merced.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        <a href="assets/who-is-alex-merced.mp4">Download the video</a>.
+                    </video>
+                </div>
+                <figcaption>A 48-second introduction — press play (with sound) for the short version of the story below.</figcaption>
+            </figure>
+        </div>
+    </section>
 
     <!-- Timeline wrapper for life story sections -->
     <div class="timeline">

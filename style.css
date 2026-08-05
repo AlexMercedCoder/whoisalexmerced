@@ -314,6 +314,37 @@ section h3::after {
 }
 
 /* ============================================
+   Brand Video
+   ============================================ */
+#brand-video .video-figure {
+    max-width: 900px;
+    margin: 40px auto 0;
+}
+
+#brand-video .video-frame {
+    border-radius: 16px;
+    overflow: hidden;
+    border: var(--card-border);
+    box-shadow: var(--card-shadow);
+    background: #000;
+}
+
+#brand-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background: #000;
+}
+
+#brand-video figcaption {
+    margin-top: 16px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* ============================================
    Scroll Reveal
    ============================================ */
 .reveal {
