@@ -379,6 +379,101 @@ section h3::after {
         var(--bg-gradient);
     padding: 160px 0 120px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================================
+   Hero Orbits — desktop only
+   ============================================ */
+.hero-orbits {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .hero-orbits {
+        display: block;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 0;
+    }
+}
+
+.wo-ring circle {
+    fill: none;
+    stroke: var(--text-secondary);
+    stroke-width: 1;
+    opacity: 0.22;
+}
+
+.wo-pulse {
+    fill: none;
+    stroke: var(--accent-orange);
+    stroke-width: 1.5;
+    transform-box: view-box;
+    transform-origin: 600px 235px;
+    animation: wo-pulse 9s ease-out infinite;
+}
+
+.wo-pulse--b {
+    animation-delay: -4.5s;
+}
+
+.wo-dot {
+    fill: var(--text-secondary);
+    opacity: 0.75;
+}
+
+.wo-dot--accent {
+    fill: var(--accent-orange);
+    opacity: 1;
+}
+
+.wo-spin {
+    transform-box: view-box;
+    transform-origin: 600px 235px;
+    animation: wo-spin 46s linear infinite;
+}
+
+.wo-spin--1 { animation-duration: 34s; }
+.wo-spin--2 { animation-duration: 52s; animation-direction: reverse; }
+.wo-spin--3 { animation-duration: 68s; }
+.wo-spin--4 { animation-duration: 88s; animation-direction: reverse; }
+
+.wo-stars circle {
+    fill: var(--accent-orange);
+    animation: wo-twinkle 5s ease-in-out infinite;
+}
+
+@keyframes wo-spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes wo-pulse {
+    0%   { transform: scale(1);    opacity: 0.5; }
+    70%  { transform: scale(2.85); opacity: 0; }
+    100% { transform: scale(2.85); opacity: 0; }
+}
+
+@keyframes wo-twinkle {
+    0%, 100% { opacity: 0.15; }
+    50%      { opacity: 0.7; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .wo-spin, .wo-pulse, .wo-stars circle {
+        animation: none;
+    }
+    .wo-pulse { opacity: 0.35; }
+    .wo-stars circle { opacity: 0.45; }
 }
 
 #hero h1 {
@@ -879,6 +974,58 @@ footer {
     text-align: center;
     padding: 80px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ============================================
+   Footer Network
+   ============================================ */
+.footer-network {
+    margin-top: 64px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: left;
+}
+
+.footer-network__title {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-orange);
+    margin-bottom: 28px;
+}
+
+.footer-network__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+}
+
+.footer-network h3 {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.footer-network ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-network a {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.footer-network a:hover {
+    color: var(--accent-orange);
 }
 
 /* ============================================

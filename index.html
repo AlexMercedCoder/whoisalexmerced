@@ -187,6 +187,58 @@
 
     <!-- Hero Section -->
     <header id="hero">
+        <svg class="hero-orbits" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMin slice" aria-hidden="true" focusable="false">
+            <defs>
+                <linearGradient id="wam-fade" x1="0" y1="0" x2="0" y2="800" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#fff"/>
+                    <stop offset="0.55" stop-color="#fff"/>
+                    <stop offset="1" stop-color="#000"/>
+                </linearGradient>
+                <mask id="wam-mask"><rect width="1200" height="800" fill="url(#wam-fade)"/></mask>
+                <filter id="wam-glow" x="-300%" y="-300%" width="700%" height="700%">
+                    <feGaussianBlur stdDeviation="5" result="blur"/>
+                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+            </defs>
+
+            <g mask="url(#wam-mask)">
+                <!-- Orbit paths -->
+                <g class="wo-ring">
+                    <circle cx="600" cy="235" r="170"/>
+                    <circle cx="600" cy="235" r="265"/>
+                    <circle cx="600" cy="235" r="370"/>
+                    <circle cx="600" cy="235" r="490"/>
+                </g>
+
+                <!-- A signal going out from the centre -->
+                <circle class="wo-pulse" cx="600" cy="235" r="170"/>
+                <circle class="wo-pulse wo-pulse--b" cx="600" cy="235" r="170"/>
+
+                <!-- The four facets, each riding its own orbit -->
+                <g class="wo-spin wo-spin--1">
+                    <circle class="wo-dot wo-dot--accent" cx="770" cy="235" r="5" filter="url(#wam-glow)"/>
+                </g>
+                <g class="wo-spin wo-spin--2">
+                    <circle class="wo-dot" cx="865" cy="235" r="4"/>
+                </g>
+                <g class="wo-spin wo-spin--3">
+                    <circle class="wo-dot wo-dot--accent" cx="970" cy="235" r="5" filter="url(#wam-glow)"/>
+                </g>
+                <g class="wo-spin wo-spin--4">
+                    <circle class="wo-dot" cx="1090" cy="235" r="4"/>
+                </g>
+
+                <!-- Distant constellation -->
+                <g class="wo-stars">
+                    <circle cx="112" cy="118" r="2" style="animation-delay:-0.4s"/>
+                    <circle cx="238" cy="322" r="2" style="animation-delay:-1.7s"/>
+                    <circle cx="76" cy="486" r="2" style="animation-delay:-3.1s"/>
+                    <circle cx="1064" cy="96" r="2" style="animation-delay:-2.2s"/>
+                    <circle cx="1142" cy="330" r="2" style="animation-delay:-0.9s"/>
+                    <circle cx="986" cy="512" r="2" style="animation-delay:-2.8s"/>
+                </g>
+            </g>
+        </svg>
         <div class="container">
             <div class="profile-img-container reveal">
                 <img src="assets/img/alex-8bit-fights-ignorance.jpg" alt="Alex Merced Pixel Art" class="profile-img">
@@ -638,6 +690,39 @@
         <div class="container">
             <p>Promoting empowerment through education, technology, and optimism.</p>
             <a href="https://alexmerced.com" class="btn-secondary">Visit AlexMerced.com</a>
+
+            <nav class="footer-network" aria-label="The Alex Merced Network">
+                <h2 class="footer-network__title">The Alex Merced Network</h2>
+                <div class="footer-network__grid">
+                    <div>
+                        <h3>Alex Merced</h3>
+                        <ul>
+                            <li><a href="https://alexmerced.com" target="_blank" rel="noopener">AlexMerced.com</a></li>
+                            <li><a href="https://alexmercedmedia.com" target="_blank" rel="noopener">AlexMercedMedia.com</a></li>
+                            <li><a href="https://books.alexmerced.com" target="_blank" rel="noopener">Books</a></li>
+                            <li><a href="https://alexmercedcoder.dev" target="_blank" rel="noopener">AlexMercedCoder.dev</a></li>
+                            <li><a href="https://alexmerceddata.com" target="_blank" rel="noopener">AlexMercedData.com</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Lakehouse &amp; Data</h3>
+                        <ul>
+                            <li><a href="https://datalakehousehub.com" target="_blank" rel="noopener">DataLakehouseHub.com</a></li>
+                            <li><a href="https://iceberglakehouse.com" target="_blank" rel="noopener">IcebergLakehouse.com</a></li>
+                            <li><a href="https://agenticlakehouse.com" target="_blank" rel="noopener">AgenticLakehouse.com</a></li>
+                            <li><a href="https://semanticlakehouse.com" target="_blank" rel="noopener">SemanticLakehouse.com</a></li>
+                            <li><a href="https://dataengnr.com" target="_blank" rel="noopener">DataEngnr.com</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Blogs</h3>
+                        <ul>
+                            <li><a href="https://grokoverflow.com" target="_blank" rel="noopener">GrokOverflow.com</a></li>
+                            <li><a href="https://ingestthis.com" target="_blank" rel="noopener">IngestThis.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </footer>
 
