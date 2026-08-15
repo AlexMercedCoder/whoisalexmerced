@@ -15,7 +15,7 @@
     <meta property="og:title" content="Who Is Alex Merced?">
     <meta property="og:description"
         content="Discover the story of a Technologist, Educator, Developer Advocate, and Author.">
-    <meta property="og:image" content="https://whoisalexmerced.com/assets/img/alex-8bit-fights-ignorance.jpg">
+    <meta property="og:image" content="https://whoisalexmerced.com/assets/img/alex-merced-headshot.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -23,14 +23,14 @@
     <meta property="twitter:title" content="Who Is Alex Merced?">
     <meta property="twitter:description"
         content="Discover the story of a Technologist, Educator, Developer Advocate, and Author.">
-    <meta property="twitter:image" content="https://whoisalexmerced.com/assets/img/alex-8bit-fights-ignorance.jpg">
+    <meta property="twitter:image" content="https://whoisalexmerced.com/assets/img/alex-merced-headshot.jpg">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="apple-touch-icon" href="assets/img/favicon.png">
 
     <!-- Preload critical assets -->
-    <link rel="preload" as="image" href="assets/img/alex-8bit-fights-ignorance.jpg">
+    <link rel="preload" as="image" href="assets/img/alex-merced-headshot.webp">
     <link rel="preload" as="font"
         href="https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1C4G-EiAou6Y.woff2" crossorigin>
 
@@ -82,7 +82,7 @@
         "https://d6storyteller.alexmerced.com"
       ],
       "knowsAbout": ["Data Engineering", "Apache Iceberg", "Software Development", "Economics", "Developer Advocacy"],
-      "image": "https://whoisalexmerced.com/assets/img/alex-8bit-fights-ignorance.jpg"
+      "image": "https://whoisalexmerced.com/assets/img/alex-merced-headshot.jpg"
     }
     </script>
 
@@ -241,7 +241,10 @@
         </svg>
         <div class="container">
             <div class="profile-img-container reveal">
-                <img src="assets/img/alex-8bit-fights-ignorance.jpg" alt="Alex Merced Pixel Art" class="profile-img">
+                <picture>
+                    <source srcset="assets/img/alex-merced-headshot.webp" type="image/webp">
+                    <img src="assets/img/alex-merced-headshot.jpg" alt="Alex Merced" class="profile-img" width="150" height="150" fetchpriority="high">
+                </picture>
             </div>
             <h1 class="reveal">Alex Merced</h1>
             <h2 class="reveal">Technologist | Educator | Developer Advocate | Author</h2>
@@ -717,6 +720,7 @@
                     <div>
                         <h3>Blogs</h3>
                         <ul>
+                            <li><a href="https://alexmerced.blog" target="_blank" rel="noopener">AlexMerced.blog</a></li>
                             <li><a href="https://grokoverflow.com" target="_blank" rel="noopener">GrokOverflow.com</a></li>
                             <li><a href="https://ingestthis.com" target="_blank" rel="noopener">IngestThis.com</a></li>
                         </ul>
