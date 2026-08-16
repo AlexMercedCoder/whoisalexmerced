@@ -977,55 +977,48 @@ footer {
 }
 
 /* ============================================
-   Footer Network
+   Footer Runs — inline cross-network links
    ============================================ */
-.footer-network {
-    margin-top: 64px;
-    padding-top: 40px;
+.footer-run {
+    margin-top: 40px;
+    padding-top: 28px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     text-align: left;
 }
 
-.footer-network__title {
+.footer-run__title {
     font-family: var(--font-heading);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--accent-orange);
-    margin-bottom: 28px;
+    margin-bottom: 14px;
 }
 
-.footer-network__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 32px;
-}
-
-.footer-network h3 {
-    font-family: var(--font-heading);
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: 12px;
-}
-
-.footer-network ul {
-    list-style: none;
+.footer-run__list {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 12px;
+    list-style: none;
 }
 
-.footer-network a {
+.footer-run__list a {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     text-decoration: none;
     transition: color 0.25s ease;
 }
 
-.footer-network a:hover {
+.footer-run__list a:hover {
     color: var(--accent-orange);
+}
+
+.footer-run__list li + li::before {
+    content: "\00B7";
+    margin-right: 12px;
+    opacity: 0.5;
 }
 
 /* ============================================
