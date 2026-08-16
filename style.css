@@ -1009,6 +1009,10 @@ footer {
     font-size: 0.875rem;
     text-decoration: none;
     transition: color 0.25s ease;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .footer-run__list a:hover {
@@ -1049,4 +1053,19 @@ footer {
     .pull-quote p {
         font-size: 1.1rem;
     }
+}
+
+/* Mobile: the inline run degenerates to roughly one item per row, which left a
+   separator stranded at the start of most lines and 17px tap targets. Below
+   640px the items become chips instead: no separators, real touch targets. */
+@media (max-width: 640px) {
+  .footer-run__list { gap: 8px; }
+  .footer-run__list li + li::before { content: none !important; margin-right: 0 !important; }
+  .footer-run__list a {
+    display: block;
+    padding: 9px 12px;
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 6px;
+    line-height: 1.2;
+  }
 }
