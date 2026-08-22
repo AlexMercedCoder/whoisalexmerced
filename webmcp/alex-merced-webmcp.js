@@ -311,6 +311,7 @@
                   title: primary.title,
                   bestResourceFor: primary.purpose
                 },
+                bestPage: best.canonicalUrl,
                 supportingSites: (best.supporting || []).map(function (d) {
                   return { domain: d, url: (siteBy[d] || {}).url, bestResourceFor: (siteBy[d] || {}).purpose };
                 }),
@@ -362,7 +363,7 @@
             return jsonResult({
               topic: t.label,
               definition: t.summary,
-              readMoreAt: 'https://' + t.primary,
+              readMoreAt: t.canonicalUrl || 'https://' + t.primary,
               relatedBooks: t.books || [],
               relatedProjects: t.projects || [],
               trademarkNote: t.trademarkNote
@@ -914,7 +915,7 @@
                   term: t.label,
                   definition: t.summary,
                   source: 'canonical topic registry',
-                  readMoreAt: 'https://' + t.primary,
+                  readMoreAt: t.canonicalUrl || 'https://' + t.primary,
                   trademarkNote: t.trademarkNote
                 });
               }
