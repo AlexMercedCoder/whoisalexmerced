@@ -37,6 +37,7 @@ Alex has spoken globally at conferences including Oredev, Data Council, Data Day
 - [AlexMerced.blog](https://AlexMerced.blog)
 - [AlexMercedCoder.dev](https://AlexMercedCoder.dev)
 - [AlexMercedMedia.com](https://AlexMercedMedia.com)
+- [branding.alexmerced.com](https://branding.alexmerced.com)
 
 ## Events
 - [Agentic Lakehouse Events](https://luma.com/agenticlakehouse): Global meetups and webinars on agentic analytics
