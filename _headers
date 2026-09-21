@@ -1,0 +1,7 @@
+/bcard
+  X-Robots-Tag: noindex, follow
+/bcard/*
+  X-Robots-Tag: noindex, follow
+/bcard/alex-merced.vcf
+  Content-Type: text/vcard; charset=utf-8
+  Content-Disposition: attachment; filename="Alex-Merced.vcf"

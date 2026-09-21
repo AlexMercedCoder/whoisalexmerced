@@ -1,0 +1,80 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Merced;Alex;;;
+FN:Alex Merced
+ORG:Dremio
+TITLE:Head of Developer Relations
+EMAIL;TYPE=HOME,INTERNET:email@alexmerced.com
+EMAIL;TYPE=WORK,INTERNET:alex.merced@dremio.com
+EMAIL;TYPE=INTERNET:Contact@alexmerced.com
+URL:https://whoisalexmerced.com/bcard/
+item1.URL:https://www.linkedin.com/in/alexmerced
+item1.X-ABLabel:LinkedIn
+item2.URL:https://github.com/alexmercedcoder
+item2.X-ABLabel:GitHub
+item3.URL:https://www.instagram.com/alexmercedcoder
+item3.X-ABLabel:Instagram
+item4.URL:https://www.tiktok.com/@alexmercedcoder
+item4.X-ABLabel:TikTok
+item5.URL:https://bsky.app/profile/alextalksdatalakehouses.fyi
+item5.X-ABLabel:Bluesky
+item6.URL:https://me.dm/@thealexmerced
+item6.X-ABLabel:Mastodon
+item7.URL:https://twitter.com/amdatalakehouse
+item7.X-ABLabel:X / Twitter
+item8.URL:https://www.youtube.com/@alexmerceddata
+item8.X-ABLabel:YouTube · Data & AI
+item9.URL:https://www.youtube.com/@alexmercedcoder
+item9.X-ABLabel:YouTube · Coding
+item10.URL:https://www.youtube.com/user/AlexMercedMusic
+item10.X-ABLabel:YouTube · Music
+item11.URL:https://amdatalakehouse.substack.com
+item11.X-ABLabel:Substack · Data & AI
+item12.URL:https://loveatarian.substack.com/
+item12.X-ABLabel:Substack · The Lovatarian
+item13.URL:https://alexmerced.com
+item13.X-ABLabel:AlexMerced.com
+item14.URL:https://alexmercedmedia.com
+item14.X-ABLabel:AlexMercedMedia.com
+item15.URL:https://branding.alexmerced.com
+item15.X-ABLabel:Branding.AlexMerced.com
+item16.URL:https://opendatalakehouse.com
+item16.X-ABLabel:OpenDataLakehouse.com
+item17.URL:https://books.alexmerced.com
+item17.X-ABLabel:Books
+item18.URL:https://alexmercedcoder.dev
+item18.X-ABLabel:AlexMercedCoder.dev
+item19.URL:https://alexmerceddata.com
+item19.X-ABLabel:AlexMercedData.com
+item20.URL:https://datalakehousehub.com
+item20.X-ABLabel:DataLakehouseHub.com
+item21.URL:https://iceberglakehouse.com
+item21.X-ABLabel:IcebergLakehouse.com
+item22.URL:https://agenticlakehouse.com
+item22.X-ABLabel:AgenticLakehouse.com
+item23.URL:https://agenticanalyticsnow.com
+item23.X-ABLabel:AgenticAnalyticsNow.com
+item24.URL:https://openagenticplatform.com
+item24.X-ABLabel:OpenAgenticPlatform.com
+item25.URL:https://www.alexmercedai.com
+item25.X-ABLabel:AlexMercedAI.com
+item26.URL:https://semanticlakehouse.com
+item26.X-ABLabel:SemanticLakehouse.com
+item27.URL:https://openlakehouse.alexmerced.com
+item27.X-ABLabel:OpenLakehouse.AlexMerced.com
+item28.URL:https://dataengnr.com
+item28.X-ABLabel:DataEngnr.com
+item29.URL:https://alexmerced.blog
+item29.X-ABLabel:AlexMerced.blog
+item30.URL:https://grokoverflow.com
+item30.X-ABLabel:GrokOverflow.com
+item31.URL:https://ingestthis.com
+item31.X-ABLabel:IngestThis.com
+item32.URL:https://alexmercedmusic.com
+item32.X-ABLabel:AlexMercedMusic.com
+item33.URL:https://venmo.com/u/thealexmerced
+item33.X-ABLabel:Venmo
+NOTE:Contact details and current links: https://whoisalexmerced.com/bcard/
+item34.URL:https://paypal.me/thealexmerced
+item34.X-ABLabel:PayPal
+END:VCARD
