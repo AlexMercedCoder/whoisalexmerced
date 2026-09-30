@@ -9,17 +9,29 @@ This site is the personal profile of Alex Merced: Technologist, Educator, Develo
 - **NYC & Economics:** Spent a decade in NYC teaching economics and finance to professionals.
 - **Public Service:** Ran for public office advocating for pluralism and served as Vice Chair of the LNC (2018-2020).
 - **Transition to Technology:** Reinvented his career in 2019, diving into software development, creating GrokOverflow.com, and producing tech content.
-- **Developer Advocacy:** Joined Dremio in 2021 as Head of Developer Relations, focusing on Apache Iceberg, Apache Polaris, and developer education.
+- **Developer Advocacy:** Joined Dremio in 2021 and is now Head of Developer Relations, focusing on Apache Iceberg, Apache Polaris, and developer education. 2025 Dremio CEO Award.
+
+## Career chapters
+The long version, one period per page, with dates and sources. Index: [whoisalexmerced.com/chapters/](https://whoisalexmerced.com/chapters/)
+- [Early Life in Hartford, Connecticut (1985 to 2003)](https://whoisalexmerced.com/chapters/early-life-hartford/): Alex Merced was born in Hartford, Connecticut on June 30, 1985. A technical high school, RPG Maker, and Geocities fan sites started his path into technology.
+- [Music and Songwriting](https://whoisalexmerced.com/chapters/music/): Alex Merced's music, from trombone and guitar to self-taught electronic production, and how he now uses AI to hear full productions of songs he wrote years ago.
+- [College at Bowling Green State University (2003 to 2007)](https://whoisalexmerced.com/chapters/bowling-green-state-university/): From 2003 to 2007 Alex Merced studied Marketing and Popular Culture at Bowling Green State University, ran promotions at WBGU-FM, and started two businesses.
+- [Teaching Finance and Economics in New York City (2008 to 2019)](https://whoisalexmerced.com/chapters/new-york-finance-education/): After college Alex Merced moved to New York City and spent more than a decade at Greico Financial Training teaching economics and finance to professionals.
+- [Public Service and Politics (2013 to 2019)](https://whoisalexmerced.com/chapters/public-service/): Alex Merced ran for office in New York three times, was the 2016 Libertarian nominee for U.S. Senate, and was elected Vice Chair of the Libertarian National Committee in 2018.
+- [From Finance to Software Development (2019 to 2021)](https://whoisalexmerced.com/chapters/software-development/): In 2019 Alex Merced left finance training for software: General Assembly's bootcamp and then its classroom, agency work at Crossfield Digital, and a YouTube web development masterclass.
+- [Developer Relations at Dremio (2021 to Present)](https://whoisalexmerced.com/chapters/dremio-developer-relations/): Alex Merced joined Dremio in 2021 and is now Head of Developer Relations, teaching Apache Iceberg, Apache Polaris, and the open lakehouse through talks, courses, and writing.
+- [Books and Authorship (2024 to Present)](https://whoisalexmerced.com/chapters/books-and-authorship/): Alex Merced co-authored O'Reilly's Apache Iceberg and Apache Polaris definitive guides, wrote Manning's Architecting an Apache Iceberg Lakehouse, and publishes independent books.
 
 ## Books Authored
 - Apache Iceberg: The Definitive Guide (O'Reilly)
 - Apache Polaris: The Definitive Guide (O'Reilly)
 - Architecting an Apache Iceberg Lakehouse (Manning)
 - Building the Software Factory (Packt, with Benedikt Stemmildt)
-- Additional independent titles: [books.alexmerced.com](https://books.alexmerced.com)
+- Highlighted books: [whoisalexmerced.com/books/](https://whoisalexmerced.com/books/)
+- Full catalog, including independent titles: [books.alexmerced.com](https://books.alexmerced.com)
 
 ## Speaking
-Alex has spoken globally at conferences including Oredev, Data Council, Data Day Texas, Confluent Current, and DataEngBytes. To book Alex to speak, email Contact@alexmerced.com.
+Alex has spoken globally at conferences including Oredev, Data Council, Data Day Texas, Confluent Current, and DataEngBytes. Talk topics and booking: [alexmerced.com/speaking](https://alexmerced.com/speaking). Or email Contact@alexmerced.com.
 
 ## FAQ
 - **What does Alex Merced do?** Head of Developer Relations at Dremio, focusing on data engineering, open source (Apache Iceberg, Apache Polaris), and developer education.

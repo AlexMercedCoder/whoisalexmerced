@@ -73,7 +73,8 @@ document.addEventListener('click', function (e) {
       "description": "The long-form story of Alex Merced, from Hartford, Connecticut to Head of Developer Relations at Dremio.",
       "inLanguage": "en",
       "mainEntity": { "@id": "https://alexmerced.com/#alexmerced" },
-      "about": { "@id": "https://alexmerced.com/#alexmerced" }
+      "about": { "@id": "https://alexmerced.com/#alexmerced" },
+      "hasPart": [{ "@id": "https://whoisalexmerced.com/chapters/early-life-hartford/#article" }, { "@id": "https://whoisalexmerced.com/chapters/music/#article" }, { "@id": "https://whoisalexmerced.com/chapters/bowling-green-state-university/#article" }, { "@id": "https://whoisalexmerced.com/chapters/new-york-finance-education/#article" }, { "@id": "https://whoisalexmerced.com/chapters/public-service/#article" }, { "@id": "https://whoisalexmerced.com/chapters/software-development/#article" }, { "@id": "https://whoisalexmerced.com/chapters/dremio-developer-relations/#article" }, { "@id": "https://whoisalexmerced.com/chapters/books-and-authorship/#article" }]
     }
     </script>
 
@@ -140,8 +141,7 @@ document.addEventListener('click', function (e) {
                 <li><a href="#devrel">DevRel</a></li>
                 <li><a href="#books">Books</a></li>
                 <li><a href="#podcasts">Podcasts</a></li>
-                <li><a href="#projects">Links</a></li>
-                <li><a href="/books/">Books</a></li>
+                <li><a href="/chapters/">Chapters</a></li>
             </ul>
             <button class="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
         </div>
@@ -243,6 +243,48 @@ document.addEventListener('click', function (e) {
         </div>
     </section>
 
+    <!-- Story in chapters -->
+    <section id="chapters">
+        <div class="container reveal">
+            <h3>The Story in Chapters</h3>
+            <p>This page tells the story in one scroll. Each chapter below takes one period at a time, with dates, names, and sources.</p>
+            <ol class="chapter-list chapter-list--home">
+                <li class="chapter-list__item">
+                    <p class="chapter-list__meta">Chapter 1 · 1985 to 2003</p>
+                    <h4><a href="/chapters/early-life-hartford/">Early Life in Hartford, Connecticut (1985 to 2003)</a></h4>
+                </li>
+                <li class="chapter-list__item">
+                    <p class="chapter-list__meta">Chapter 2</p>
+                    <h4><a href="/chapters/music/">Music and Songwriting</a></h4>
+                </li>
+                <li class="chapter-list__item">
+                    <p class="chapter-list__meta">Chapter 3 · 2003 to 2007</p>
+                    <h4><a href="/chapters/bowling-green-state-university/">College at Bowling Green State University (2003 to 2007)</a></h4>
+                </li>
+                <li class="chapter-list__item">
+                    <p class="chapter-list__meta">Chapter 4 · 2008 to 2019</p>
+                    <h4><a href="/chapters/new-york-finance-education/">Teaching Finance and Economics in New York City (2008 to 2019)</a></h4>
+                </li>
+                <li class="chapter-list__item">
+                    <p class="chapter-list__meta">Chapter 5 · 2013 to 2019</p>
+                    <h4><a href="/chapters/public-service/">Public Service and Politics (2013 to 2019)</a></h4>
+                </li>
+                <li class="chapter-list__item">
+                    <p class="chapter-list__meta">Chapter 6 · 2019 to 2021</p>
+                    <h4><a href="/chapters/software-development/">From Finance to Software Development (2019 to 2021)</a></h4>
+                </li>
+                <li class="chapter-list__item">
+                    <p class="chapter-list__meta">Chapter 7 · 2021 to present</p>
+                    <h4><a href="/chapters/dremio-developer-relations/">Developer Relations at Dremio (2021 to Present)</a></h4>
+                </li>
+                <li class="chapter-list__item">
+                    <p class="chapter-list__meta">Chapter 8 · 2024 to present</p>
+                    <h4><a href="/chapters/books-and-authorship/">Books and Authorship (2024 to Present)</a></h4>
+                </li>
+            </ol>
+        </div>
+    </section>
+
     <!-- Timeline wrapper for life story sections -->
     <div class="timeline">
 
@@ -274,6 +316,7 @@ document.addEventListener('click', function (e) {
                             style="max-width:300px; border-radius:12px; box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
                     </div>
                 </div>
+                <a class="chapter-link" href="/chapters/early-life-hartford/">Read the full chapter &rarr;</a>
             </div>
         </section>
 
@@ -323,6 +366,7 @@ document.addEventListener('click', function (e) {
                         </div>
                     </div>
                 </div>
+                <a class="chapter-link" href="/chapters/music/">Read the full chapter &rarr;</a>
             </div>
         </section>
 
@@ -366,6 +410,7 @@ document.addEventListener('click', function (e) {
                             style="width:100%; border-radius:12px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); opacity:0.9;">
                     </div>
                 </div>
+                <a class="chapter-link" href="/chapters/bowling-green-state-university/">Read the full chapter &rarr;</a>
             </div>
         </section>
 
@@ -401,6 +446,7 @@ document.addEventListener('click', function (e) {
                             allowfullscreen loading="lazy"></iframe>
                     </div>
                 </div>
+                <a class="chapter-link" href="/chapters/new-york-finance-education/">Read the full chapter &rarr;</a>
             </div>
         </section>
 
@@ -439,6 +485,7 @@ document.addEventListener('click', function (e) {
                         </ul>
                     </div>
                 </div>
+                <a class="chapter-link" href="/chapters/public-service/">Read the full chapter &rarr;</a>
             </div>
         </section>
 
@@ -455,6 +502,7 @@ document.addEventListener('click', function (e) {
                     Crossfield Digital, as a bootcamp instructor for General Assembly and occasional freelance work with
                     clients like CampusGuard.
                 </p>
+                <a class="chapter-link" href="/chapters/software-development/">Read the full chapter &rarr;</a>
             </div>
         </section>
 
@@ -494,6 +542,7 @@ document.addEventListener('click', function (e) {
             <div class="speaker-image">
                 <img src="assets/img/alex-signing-books.jpg" alt="Alex Merced Signing Books" loading="lazy">
             </div>
+            <a class="chapter-link" href="/chapters/dremio-developer-relations/">Read the full chapter &rarr;</a>
         </div>
     </section>
 
@@ -502,26 +551,26 @@ document.addEventListener('click', function (e) {
         <div class="container reveal">
             <h3>Books & Authorship</h3>
             <div class="book-grid">
-                <a href="https://hello.dremio.com/wp-apache-iceberg-the-definitive-guide-reg.html" target="_blank"
-                    class="book" aria-label="Download Apache Iceberg: The Definitive Guide">
+                <a href="https://books.alexmerced.com/books/apache-iceberg-the-definitive-guide/"
+                    class="book" aria-label="Apache Iceberg: The Definitive Guide on books.alexmerced.com">
                     <img src="assets/img/cover-apache-iceberg-tdg.jpg" alt="Apache Iceberg: The Definitive Guide"
                         loading="lazy">
                     <p>Apache Iceberg: The Definitive Guide</p>
                 </a>
-                <a href="https://hello.dremio.com/wp-apache-polaris-guide-reg.html" target="_blank" class="book"
-                    aria-label="Download Apache Polaris: The Definitive Guide">
+                <a href="https://books.alexmerced.com/books/apache-polaris-the-definitive-guide/" class="book"
+                    aria-label="Apache Polaris: The Definitive Guide on books.alexmerced.com">
                     <img src="assets/img/cover-apache-polaris-tdg.jpg" alt="Apache Polaris: The Definitive Guide"
                         loading="lazy">
                     <p>Apache Polaris: The Definitive Guide</p>
                 </a>
-                <a href="https://www.manning.com/books/architecting-an-apache-iceberg-lakehouse" target="_blank"
-                    class="book" aria-label="View Architecting an Apache Iceberg Lakehouse on Manning">
+                <a href="https://books.alexmerced.com/books/architecting-an-apache-iceberg-lakehouse/"
+                    class="book" aria-label="Architecting an Apache Iceberg Lakehouse on books.alexmerced.com">
                     <img src="assets/img/cover-architecting-an-apache-iceberg-lakehouse.jpg"
                         alt="Architecting an Apache Iceberg Lakehouse" loading="lazy">
                     <p>Architecting an Apache Iceberg Lakehouse</p>
                 </a>
-                <a href="https://books.alexmerced.com/books/building-the-software-factory/" target="_blank" rel="noopener"
-                    class="book" aria-label="View Building the Software Factory (Packt)">
+                <a href="https://books.alexmerced.com/books/building-the-software-factory/"
+                    class="book" aria-label="Building the Software Factory on books.alexmerced.com">
                     <img src="https://m.media-amazon.com/images/I/81-gPruyXyL._SY450_.jpg"
                         alt="Building the Software Factory" loading="lazy">
                     <p>Building the Software Factory</p>
@@ -533,11 +582,16 @@ document.addEventListener('click', function (e) {
                     <p>D6 Storyteller: Tabletop RPG Series (10 Books)</p>
                 </a>
             </div>
-            <p style="margin-top: 2rem; text-align: center;">
-                <a href="https://books.alexmerced.com" target="_blank" rel="noopener" class="btn-secondary"
+            <p style="margin-top: 2rem; text-align: center;">Dremio gives away free digital editions of
+                <a href="https://hello.dremio.com/wp-apache-iceberg-the-definitive-guide-reg.html" style="color: var(--accent-orange);">Apache Iceberg: The Definitive Guide</a>
+                and <a href="https://hello.dremio.com/wp-apache-polaris-guide-reg.html" style="color: var(--accent-orange);">Apache Polaris: The Definitive Guide</a>.</p>
+            <p style="text-align: center;">
+                <a href="/books/" class="btn-secondary">Highlighted books</a>
+                <a href="https://books.alexmerced.com" class="btn-secondary"
                     aria-label="Browse the full book catalog at books.alexmerced.com">Browse the full book catalog
                     &rarr;</a>
             </p>
+            <a class="chapter-link" href="/chapters/books-and-authorship/">Read the full chapter &rarr;</a>
         </div>
     </section>
 
