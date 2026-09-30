@@ -34,6 +34,14 @@ const freeEditions = {
   'apache-polaris-the-definitive-guide': 'https://hello.dremio.com/wp-apache-polaris-guide-reg.html',
 };
 
+// Covers committed to this repo. Amazon's image host refuses hotlinks from many
+// clients, so a local copy wins when one exists.
+const localCovers = {
+  'apache-iceberg-the-definitive-guide': '/assets/img/cover-apache-iceberg-tdg.jpg',
+  'apache-polaris-the-definitive-guide': '/assets/img/cover-apache-polaris-tdg.jpg',
+  'architecting-an-apache-iceberg-lakehouse': '/assets/img/cover-architecting-an-apache-iceberg-lakehouse.jpg',
+};
+
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -43,7 +51,7 @@ function card(b) {
     : '';
   return `        <li class="bookspage__item">
           <a class="bookspage__cover" href="${esc(b.canonicalPage)}" tabindex="-1" aria-hidden="true">
-            <img src="${esc(b.cover)}" alt="" loading="lazy" decoding="async">
+            <img src="${esc(localCovers[b.slug] ?? b.cover)}" alt="" loading="lazy" decoding="async">
           </a>
           <div>
             <h2 class="bookspage__title"><a href="${esc(b.canonicalPage)}">${esc(b.title)}</a></h2>
