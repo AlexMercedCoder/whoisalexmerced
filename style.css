@@ -1069,3 +1069,47 @@ footer {
     line-height: 1.2;
   }
 }
+
+/* ============================================
+   Network: CTA strip and "all sites" link
+   Markup is rendered by scripts/apply-network.mjs from network/network.json
+   ============================================ */
+.cta-strip {
+    padding: 56px 0;
+    text-align: center;
+    background: var(--primary-light);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cta-strip__title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-strip__links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px 16px;
+}
+
+.cta-strip__links .btn-secondary {
+    margin-top: 0;
+}
+
+.footer-run__all {
+    margin-top: 28px;
+    text-align: left;
+    font-size: 0.9375rem;
+}
+
+.footer-run__all a {
+    color: var(--accent-orange);
+    font-weight: 600;
+}
+
+.footer-run__all a:hover {
+    text-decoration: underline;
+}
